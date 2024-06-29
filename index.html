@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Reyaan Website</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+
+  <!-- TOP -->
+
+
+  <h1 id="heading">My Website</h1>
+  <br>
+  
+  <h6 id="Introduction">Created by: Reyaan Thaker</h6>
+
+  <hr>
+
+  <a href="games.html" style="font-size: 20px;">Games Room</a>
+  <a href="ToC.html" style="font-size: 14px;">Table of Contents</a>
+  <!-- BUTTONS -->
+
+   <hr>
+  <button id="darkcolor" onclick="change_colordark()">Dark Mode</button>
+  <button id="lightcolor" onclick="change_colorlight()">Light Mode</button>
+  <button id="randomcolor" onclick="change_colorrandom()">Random Color!</button>
+  <button id="original" onclick="change_colorback()">Back to original!</button>
+  <hr>
+
+  <!-- RELOAD PAGE -->
+
+
+  <p><a href="https://0ba341e2-528f-4415-a155-435b20d778b3-00-39b6pj06m0xww.janeway.replit.dev/">Reload Page</a></p>
+
+
+
+
+  <form id="searchForm">
+    <label for="query">Search:</label>
+    <input type="text" id="query" name="query" required>
+    <input type="submit" value="Search">
+    <button type="button" id="clearSearch">Clear Search</button>
+  </form>
+  <p id="searchResult"></p>
+
+  <!-- DETAILS -->
+
+
+  <p>
+  <details>My name is Reyaan Thaker
+    <br>
+    Some things about me are:
+    <br>
+    <ul>
+      <li> I play soccer</li>
+      <li> I enjoy solving rubik's cubes</li>
+      <li> I play video games</li>
+      <li>I am 11 years old</li>
+    </ul>
+  </details>
+  </p>
+  <br>
+  <hr>
+
+
+  <!-- SOCCER SECTION -->
+
+
+  <h3>Soccer:</h3>
+  <p>
+  <details>Things about soccer
+    <br>
+    <ul>
+      <li> I play soccer regularly</li>
+      <li> I play soccer on a soccer leage in my city</li>
+    </ul>
+  </details>
+  </p>
+
+
+  <!-- RUBIKS CUBES SECION -->
+  <hr>
+  <h3>Rubiks Cubes:</h3>
+
+  <p>
+  <details>Things about Rubiks cubes
+    <br>
+    <ul>
+      <li>I like to solve different types of rubiks cubes</li>
+      <li>I have gone to rubiks cube competitions</li>
+      <li>I know how to solve the 3x3,2x2,skewb,and pyraminx</li>
+      <li>My fasest 3x3 time is 32.45 seconds</li>
+      <li><a href="cube.html">Learn how to solve the Rubik's Cube</a></li>
+      <li><a href="speedcube.html">Learn how to speedsolve the Rubik's Cube</a></li>
+    </ul>
+  </details>
+  </p>
+  <p><b></b> </p>
+
+
+  <!-- VIDEO GAMES SECTION -->
+  <hr>
+  <h3>Games:</h3>
+
+  <p>
+  <details>Some games I play are:
+    <br>
+    <ul>
+      <li>Fortnite</li>
+      <li>Roblox</li>
+      <li>Brawl Stars</li>
+      <li>Clash Royale</li>
+    </ul>
+  </details>
+  </p>
+  <p><b></b> </p>
+
+
+
+  <!-- AGE SECTION -->
+  <hr>
+  <h3>More about me:</h3>
+
+  <p>
+  <details>Some more things about me are:
+    <br>
+    <ul>
+      <li>I am currently 11 years old</li>
+      <li>My birthday is August, 16, 2012</li>
+      <li>I am in 7th grade</li>
+    </ul>
+  </details>
+  </p>
+  <p><b></b> </p>
+  <hr>
+
+  <!-- BUTTONS -->
+
+
+  <button id="darkcolor" onclick="change_colordark()">Dark Mode</button>
+  <button id="lightcolor" onclick="change_colorlight()">Light Mode</button>
+  <button id="randomcolor" onclick="change_colorrandom()">Random Color!</button>
+  <button id="original" onclick="change_colorback()">Back to original!</button>
+  <br>
+  <hr>
+
+
+  <!-- REPLIT PICTURE -->
+
+
+  <img
+    src="data:image/png;base64,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"
+    height=100 px>
+  <br>
+  <hr>
+
+
+  <!-- ROCK PAPER SCISSORS GAME --->
+
+
+  <h3>Rock, Paper, Scissors Game:</h3>
+  <button onclick="playGame('rock')">Rock</button>
+  <button onclick="playGame('paper')">Paper</button>
+  <button onclick="playGame('scissors')">Scissors</button>
+  <h2 id="result"></h2>
+  <hr>
+
+
+  <!-- BUTTON COUNTER -->
+
+
+  <h1> Button Counter</h1>
+  <button id="counterBtn">Click Me!</button>
+  <p>Count: <span id="count">0</span></p>
+  <p><a href="https://0ba341e2-528f-4415-a155-435b20d778b3-00-39b6pj06m0xww.janeway.replit.dev/">Reload To Save</a></p>
+  <hr>
+
+
+
+
+
+
+
+
+
+
+  <!-- SUGGESTION FORM -->
+
+
+  <h2>Suggestions/Bugs</h2>
+  <form id="suggestion_form" onsubmit="suggestions_bugs(event)">
+    <span>First Name:</span> <input type="text" placeholder=" First Name...">
+    <br>
+    <span>Last Name:</span> <input type="text" placeholder="Last Name...">
+    <br>
+    <span>Suggestion/Bug fix:</span> <input type="text" placeholder="Type here...">
+    <br>
+    <span>Choose your age group</span><select>
+      <option disabled selected> Please select the following </option>
+      <option value="0-12"> 0-12</option>
+      <option value="12-18"> 12-18</option>
+      <option value="19-39"> 19-39</option>
+      <option value="40-64"> 40-64</option>
+      <option value="65+"> 65+ </option>
+    </select>
+    <br><br>
+    <h4> What is this response for?</h4>
+    <span> Suggestion for website bug</span><input name="response" type="radio" value="Bug"><br>
+    <span>Suggestion for existing feature</span><input name="response" type="radio" value="existing"><br>
+    <span>Suggestion for new feature</span><input name="response" type="radio" value="new"><br>
+
+    <input type="submit">
+  </form>
+
+  <h2>Feedback</h2>
+  </form>
+  <form id="feedback_form" onsubmit="feedback(event)">
+
+
+    <span>First Name:</span> <input type="text" placeholder=" First Name...">
+    <br>
+    <span>Last Name:</span> <input type="text" placeholder="Last Name...">
+    <br>
+    <span>Choose your age group </span><select>
+      <option disabled selected> Please select the following </option>
+      <option value="0-12"> 0-12</option>
+      <option value="12-18"> 12-18</option>
+      <option value="19-39"> 19-39</option>
+      <option value="40-64"> 40-64</option>
+      <option value="65+"> 65+ </option>
+    </select>
+    <br>
+    <h4> What parts about the website did you like?</h4>
+
+    <input type="checkbox" value="mode_buttons" <span>Mode Buttons </span> <br>
+    <input type="checkbox" value="About_me" <span>About me section </span> <br>
+    <input type="checkbox" value="rps_game" <span>Rock, Paper, Scissors game</span> <br>
+    <input type="checkbox" value="button" <span>Button Counter </span> <br>
+    <input type="checkbox" value="website_title" <span>Website title </span> <br>
+    <input type="checkbox" value="suggestionForm" <span>Suggestion/Bug form </span> <br>
+    <input type="checkbox" value="none" <span>None</span> <br>
+
+    <h4> What parts about the website did you dislike?</h4>
+
+    <input type="checkbox" value="mode_buttons" <span>Mode Buttons </span> <br>
+    <input type="checkbox" value="About_me" <span>About me section </span> <br>
+    <input type="checkbox" value="rps_game" <span>Rock, Paper, Scissors game</span> <br>
+    <input type="checkbox" value="button" <span>Button Counter </span> <br>
+    <input type="checkbox" value="website_title" <span>Website title </span> <br>
+    <input type="checkbox" value="suggestionForm" <span>Suggestion/Bug form </span> <br>
+    <input type="checkbox" value="none" <span>None</span> <br>
+
+    <span> <b>Overall, how would you rate this website? </b> </span><select>
+      <option disabled selected> Please select the following </option>
+      <option value="5Stars"> 5 Stars</option>
+      <option value="4Stars"> 4 Stars</option>
+      <option value="3Stars"> 3 Stars</option>
+      <option value="2Stars"> 2 Stars</option>
+      <option value="1Star"> 1 Star </option>
+    </select>
+
+    <br><br>
+    <input type="submit">
+
+  </form>
+
+
+
+
+
+  <!-- FOOTER -->
+
+
+  <footer>
+    <hr>
+    <p> Created by Reyaan Thaker</p>
+    <p> Last Updated: 06-28-2024</p>
+
+  </footer>
+
+  <script>
+
+    // JAVASCRIPT
+
+    var form = document.getElementById("suggestion_form")
+    function suggestions_bugs() {
+      event.preventDefault()
+      console.log(form)
+    }
+
+
+    var form = document.getElementById("feedback_form")
+    function feedback() {
+      event.preventDefault()
+      console.log(form)
+    }
+    // BUTTON FUNCTIONS/VARIABLES
+
+
+    var color_change = document.getElementById("darkcolor")
+
+    function change_colordark() {
+      document.body.style.backgroundColor = "black"
+      document.body.style.color = "white";
+    }
+
+
+
+    var color_change = document.getElementById("lightcolor")
+
+    function change_colorlight() {
+      document.body.style.backgroundColor = "white"
+      document.body.style.color = "black";
+    }
+
+    var color_change = document.getElementById("randomcolor")
+
+
+
+    function change_colorrandom() {
+      var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+      document.body.style.backgroundColor = randomColor;
+      document.body.style.color = "black";
+    }
+
+    var color_change = document.getElementById("original")
+
+    function change_colorback() {
+      document.body.style.backgroundColor = "skyblue"
+      document.body.style.color = "black";
+    }
+
+    // COUNTER
+
+
+    let count = localStorage.getItem('counter') || 0;
+    const counterBtn = document.getElementById('counterBtn');
+    const countDisplay = document.getElementById('count');
+    countDisplay.textContent = count;
+    counterBtn.addEventListener('click', () => {
+      count++;
+      countDisplay.textContent = count;
+      localStorage.setItem('counter', count);
+    });
+
+    //function hello(){
+    //   console.log("hello")
+    //   console.log("my")
+    //   console.log("name")
+    //   console.log("is")
+    //   console.log("reyaan")
+
+    // }
+
+    // hello()
+    // hello()
+    // hello()
+
+
+    // ROCK PAPER SCISSORS GAME
+
+
+    function playGame(playerChoice) {
+      const choices = ['rock', 'paper', 'scissors'];
+      const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+      let result = '';
+
+      if (playerChoice === computerChoice) {
+        result = `It's a tie! Both chose ${playerChoice}`;
+      } else if (
+        (playerChoice === 'rock' && computerChoice === 'scissors') ||
+        (playerChoice === 'paper' && computerChoice === 'rock') ||
+        (playerChoice === 'scissors' && computerChoice === 'paper')
+      ) {
+        result = `You win! ${playerChoice} beats ${computerChoice}`;
+      } else {
+        result = `You lose! ${computerChoice} beats ${playerChoice}`;
+      }
+
+      document.getElementById('result').innerText = result;
+    }
+
+
+    document.getElementById('searchForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const query = document.getElementById('query').value.toLowerCase();
+      const contentElements = document.querySelectorAll('body *:not(form):not(input):not(button):not(p)');
+      let found = false;
+
+
+      contentElements.forEach(element => {
+        const text = element.innerText;
+        const regex = new RegExp(`(${query})`, 'gi');
+        element.innerHTML = text.replace(/<mark>|<\/mark>/gi, '');
+        if (text.toLowerCase().includes(query) && query.trim() !== '') {
+          found = true;
+          element.innerHTML = text.replace(regex, '<mark>$1</mark>');
+        }
+      });
+
+      const searchResult = document.getElementById('searchResult');
+      if (found) {
+        searchResult.innerText = `Results found for "${query}"`;
+      } else {
+        searchResult.innerText = `No results found for "${query}"`;
+      }
+    });
+
+    document.getElementById('clearSearch').addEventListener('click', function () {
+      const contentElements = document.querySelectorAll('body *:not(form):not(input):not(button):not(p)');
+
+
+      contentElements.forEach(element => {
+        const text = element.innerText;
+        element.innerHTML = text.replace(/<mark>|<\/mark>/gi, '');
+      });
+
+
+      document.getElementById('searchResult').innerText = '';
+      document.getElementById('query').value = '';
+    });
+
+    document.getElementById('searchForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const query = document.getElementById('query').value.toLowerCase();
+      const contentElements = document.querySelectorAll('body *:not(form):not(input):not(button):not(p)');
+      let found = false;
+
+
+      contentElements.forEach(element => {
+        const text = element.innerText;
+        const regex = new RegExp(`(${query})`, 'gi');
+        element.innerHTML = text.replace(/<mark>|<\/mark>/gi, '');
+        if (text.toLowerCase().includes(query) && query.trim() !== '') {
+          found = true;
+          element.innerHTML = text.replace(regex, '<mark>$1</mark>');
+        }
+      });
+
+      const searchResult = document.getElementById('searchResult');
+      if (found) {
+        searchResult.innerText = `Results found for "${query}"`;
+      } else {
+        searchResult.innerText = `No results found for "${query}"`;
+      }
+    });
+
+    document.getElementById('clearSearch').addEventListener('click', function () {
+      const contentElements = document.querySelectorAll('body *:not(form):not(input):not(button):not(p)');
+
+
+      contentElements.forEach(element => {
+        const text = element.innerText;
+        element.innerHTML = text.replace(/<mark>|<\/mark>/gi, '');
+      });
+
+
+      document.getElementById('searchResult').innerText = '';
+      document.getElementById('query').value = '';
+    });
+
+  </script>
+
+</body>
+
+</html>
